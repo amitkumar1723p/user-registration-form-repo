@@ -1,0 +1,790 @@
+/* Start navigagtion  */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Signika:wght@600&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+/* custom css  */
+.width_80per {
+    width: 80%;
+}
+
+
+/* font-family: 'Lato', sans-serif; */
+.boldfont {
+
+    font-family: 'Signika',
+        sans-serif;
+
+}
+
+.header {
+    background-image: url('../Image/start2.jpg'),
+        linear-gradient(#00a3ff, #00a3ff);
+    background-blend-mode: multiply;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 70px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+
+
+
+.name {
+    font-size: 1.6em;
+    text-shadow: -2px 1px 0px #ff15008f;
+}
+
+ul li a {
+    margin-left: 30px;
+    font-size: 1.2em;
+
+}
+
+ul li a:hover {
+    color: blueviolet;
+}
+
+ul li a:active {
+    color: red;
+}
+
+
+
+/* Css for main container  */
+
+.main_container {
+    background-color: blue;
+    /* margin: auto; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+/* Section right and form css  */
+
+.section_right {
+    background-color: #cdcfcf;
+    width: 75%;
+    border-top-left-radius: 79px;
+    border-bottom-left-radius: 79px;
+    padding-bottom: 55px;
+    padding-top: 20px;
+}
+
+.btn-box {
+    margin-right: 8px;
+}
+
+.btn_sapn_box {
+
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: blue;
+    border-radius: 50px;
+    padding: 2px;
+    margin-top: 4px;
+
+
+
+
+}
+
+.btn_sapn_box button {
+    border-radius: 16px;
+    padding: 7px 19px;
+
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+
+}
+
+.btn1 {
+    background-color: white;
+    color: blue;
+}
+
+#login {
+    color: white;
+    background-color: blue;
+
+}
+
+#login:active {
+    color: rgb(6, 2, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+/* .btn2 {
+    background-color: blue;
+    color: white;
+} */
+
+
+
+.label {
+    cursor: pointer;
+    margin-bottom: 4px;
+    font-size: 1.1em;
+
+}
+
+
+
+.input {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 4px 5px;
+    border-radius: 8px;
+}
+
+.span {
+
+    display: flex;
+    align-items: center;
+}
+
+.span input {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+.span label {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.span1 {
+    margin-right: 18px;
+
+}
+
+.mainheading {
+    margin-top: 20px;
+    margin-bottom: 36px;
+    font-size: 2.1em;
+}
+
+
+.form_btn_box {
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.form_btn {
+    background: blue;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.1em;
+    padding: 0px 37px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border: 2px solid white;
+
+}
+
+.form_btn:active {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.required {
+    left: 2px;
+    color: red;
+    font-size: 2em;
+    position: relative;
+    top: 13px;
+}
+
+/* Section  left css  */
+
+
+.section_left {
+    text-align: center;
+    /* background-color: green; */
+    width: 24%;
+    padding-top: 86px;
+    color: white;
+    margin: 0 10px;
+}
+
+.login {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: bolder;
+    color: rgb(0, 4, 255);
+    font-size: 1.1em;
+    padding: 7px 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+
+
+}
+
+.login:active {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+}
+
+.section_left img {
+
+    width: 120px;
+    transition: top;
+    transition-duration: 4s;
+    bottom: 0;
+    margin-bottom: 15px;
+    animation-name: flyplane;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+
+    /* transition-delay: 1s;
+
+    transition-timing-function: ease-in-out;
+    position: relative; */
+}
+
+
+@keyframes flyplane {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+.section_left .one_p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+
+}
+
+.section_left .second_p {
+    font-size: 1.2em;
+}
+
+
+/* CSS FOR  FOTTER  */
+footer {
+    margin-top: auto;
+    background-image: url('../Image/start2.jpg'),
+        linear-gradient(#00a3ff, #00a3ff);
+    background-blend-mode: multiply;
+
+    height: 70px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: -2px -1px red;
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+
+
+
+/* Css for Error box */
+.Errorbox {
+    z-index: 3;
+    flex-direction: column;
+    background-color: red;
+    height: 300px;
+    position: absolute;
+    right: 30%;
+    border-radius: 24px;
+    text-align: center;
+    top: -310px;
+    transition: top;
+    padding: 0px 5px;
+    transition-duration: 1s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    width: 30vw;
+}
+
+.errormessage {
+    font-size: 1.15em;
+    color: white;
+
+}
+
+.cancel_btn {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: #0001ff;
+    margin-top: 14px;
+    padding: 7px 17px;
+    border-radius: 12px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cancel_btn:active {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+
+
+/* CSS FOR LOGIN PAGE */
+
+.login_bodY {
+
+    background: #d2d2d4;
+}
+
+.mainloginContainer {
+    margin: auto;
+}
+
+.login_form {
+    background-color: #4f93ff;
+    padding: 40px 0;
+
+    width: 325px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.login_form form {
+    width: 87%;
+    /* background: gold; */
+}
+
+.login_form form input {
+
+    padding: 3px 5px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 6px;
+}
+
+.login_form form label {
+    font-size: 1.2em;
+    margin-bottom: 4px;
+
+}
+
+
+
+.login_form form button {
+    margin-top: 10px;
+    border: none;
+    padding: 9px 0px;
+    font-size: 1.2em;
+    width: 100%;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login_form form button:active {
+    border: 2px solid white;
+}
+
+.login-heading {
+    font-size: 2.1em;
+    margin: 11px 0px;
+
+}
+
+.login_form img {
+    width: 150px;
+    filter: drop-shadow(0px 0px 4px black);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* START RESPONSIVE CSS  */
+
+
+@media screen and (max-width:1000px) {
+    .header2 {
+        height: 300px;
+        /* transition: all 1s ease-in-out; */
+    }
+
+    .header {
+        transition: all .5s ease-in-out;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        /* background-color: gold; */
+        text-align: center;
+        z-index: -1;
+
+        position: relative;
+        top: -266px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar2 {
+
+        top: 0;
+    }
+
+
+    .navbar ul {
+        flex-direction: column;
+        /* background: green; */
+
+    }
+
+    .hamburger_btn p {
+        height: 6px;
+        width: 34px;
+        margin-bottom: 4px;
+        background-color: white;
+        border-radius: 4px;
+
+
+    }
+
+    .hamburger_btn {
+        /* background-color: blue; */
+        position: absolute;
+        right: 0px;
+        top: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+
+    }
+
+    .navbar ul a {
+        margin-left: 0;
+        margin-top: 10px;
+        /* background-color: black; */
+
+        display: block;
+
+
+    }
+
+
+
+    .main_width {
+        width: 95vw;
+    }
+
+    .res_flex-column {
+        flex-direction: column;
+    }
+
+    .res_align-items {
+        align-items: center;
+    }
+
+    /* .width_48per {
+        background-color: yellow;
+
+    } */
+
+    .section_right {
+        width: 65%;
+    }
+
+    .section_container {
+        /* background-color: red; */
+        margin-right: 10px;
+        margin-left: 10px
+    }
+
+    /* form {
+        background-color: green;
+    } */
+
+    .res-width_100per {
+        width: 100%;
+    }
+
+    .genderbox {
+        margin-top: 10px;
+        /* display: none; */
+
+    }
+
+    .section_left {
+        width: 40%;
+        /* background-color: green; */
+        padding-top: 230px;
+        margin: 0 8px;
+    }
+
+    .input {
+        margin-bottom: 0px;
+    }
+
+    .Errorbox {
+        width: 45vw;
+        right: 23%;
+    }
+
+    .main_container {
+        padding-right: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:540px) {
+
+    .header {
+
+        background-size: cover;
+    }
+
+    .main_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .section_left {
+
+        padding-top: 0px;
+        margin: 0 10px;
+        width: 95%;
+        padding-top: 50px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+    }
+
+
+    .section_right {
+        width: 95%;
+        margin-left: 8px;
+        margin-right: 8px;
+
+    }
+
+    .Errorbox {
+        width: 50vw;
+        right: 20%;
+
+    }
+
+    .login_form {
+
+        width: 280px;
+    }
+
+    .login-heading {
+        font-size: 1.9em;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:330px) {
+
+
+    .header {
+        background-size: cover;
+    }
+
+    .header2 {
+        height: 350px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* top: 307px; */
+        top: -292px;
+    }
+
+    .navbar2 {
+        top: 0;
+    }
+
+
+    .navbar ul li a {
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .main_container {
+        margin-top: 25px;
+    }
+
+
+
+
+    .btn_sapn_box {
+        width: 127px;
+
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+        background-color: blue;
+        padding: 2px;
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 13px;
+    }
+
+    .main_container {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    .Errorbox {
+        width: 63vw;
+        right: 16%;
+    }
+
+    .login_form {
+        width: 208px;
+    }
+
+    .login-heading {
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    .login_form img {
+        width: 120px;
+        filter: drop-shadow(0px 0px 4px black);
+    }
+}

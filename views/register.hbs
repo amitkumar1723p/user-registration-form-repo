@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{!-- headtage  --}}
+        {{>headtag}}
+        <title>Register page</title>
+    </head>
+
+    <body>
+        <!-- Navigation  -->
+        {{>navbar}}
+
+
+
+
+        <!-- Start Main content  -->
+        <div class="main_width main_container margin_L_R-auto flex justify-between">
+            <section class="section_left">
+                <div>
+
+                    <img src="./Image/aeroplane.png" alt="aeroplane">
+                    <p class="one_p boldfont">Welcome</p>
+
+
+
+                    <p class="second_p"> The first three Employee candidates will get a chance to go to Paris </p>
+
+                    <a href="/login"> <button class="login">login</button></a>
+                </div>
+            </section>
+            <section class="section_right flex justify-end">
+                <div class="width_92per section_container">
+                    <div class="text-end  btn-box">
+                        <span class="btn_sapn_box">
+                            <button class="btn1" id="register">Registration</button>
+                            <a href="/login"><button class="" id="login">Login</button></a>
+                            {{!-- /login
+                            /register --}}
+                        </span>
+
+                    </div>
+
+                    <h1 class="text-center mainheading boldfont" id="heading"> Employee Registraton Form</h1>
+                    <form action="/register" method="post" class="width_80per margin_L_R-auto res-width_100per">
+
+
+
+
+                        <div class="flex width_100per justify-between res_flex-column res_align-items">
+                            <!-- first Name and Last name  -->
+
+
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Name  -->
+                                <label class="label" for="firstname">First Name<span
+                                        class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="text" name="firstname" id="firstname"
+                                    placeholder="First name" required>
+                            </div>
+
+
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Last Name  -->
+                                <label class="label" for="lastname">Last Name<span
+                                        class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="text" name="lastname" id="lastname"
+                                    required placeholder="last Name">
+                            </div>
+
+
+                            <!--  End first Name and Last name  -->
+                        </div>
+
+
+
+
+
+
+
+                        <div class="flex width_100per justify-between res_flex-column res_align-items">
+                            <!-- email and gender  -->
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Email  -->
+                                <label class="label" for="email">Email <span class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="email" name="email" id="email"
+                                    placeholder="Email id" required>
+                            </div>
+                            <div class="width_48per flex aling-center res-width_100per genderbox">
+                                <!-- gender  -->
+
+                                <span class="span span1">
+                                    <label for="female"> Female </label>
+                                    <input autocomplete="off" type="radio" name="gender" id="female" required>
+                                </span>
+                                <span class="span">
+                                    <label for="male"> Male </label>
+                                    <input autocomplete="off" type="radio" name="gender" id="male" required>
+
+                                </span>
+
+                            </div>
+                            <!-- End  email and gender  -->
+
+
+                        </div>
+
+                        <div class="flex width_100per justify-between res_flex-column res_align-items">
+                            <!-- Contact and Age  -->
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Contact  -->
+                                <label class="label" for="contact">Contact<span
+                                        class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="tel" name="contact" id="contact"
+                                    placeholder="Enter your contact" required maxlength="10">
+                            </div>
+
+
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Age  -->
+                                <label class="label" for="age">Age<span class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="number" name="age" id="age"
+                                    placeholder="Enter your,age" required min="18" max="50">
+                            </div>
+
+                            <!-- End Contact and Age  -->
+                        </div>
+
+                        <div class="flex width_100per justify-between res_flex-column res_align-items">
+                            <!-- password and confrim password-->
+
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Password  -->
+
+                                <label class="label" for="password">Password<span
+                                        class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="password" name="password" id="password"
+                                    required id="password" placeholder="Enter your password">
+                            </div>
+
+
+                            <div class="flex flex-colounm width_48per res-width_100per">
+                                <!-- Confrim password  -->
+                                <label class="label" for="confrimpassword">confrimpassword<span
+                                        class="clr_red required">*</span></label>
+                                <input autocomplete="off" class="input" type="password" name="confrimpassword"
+                                    id="confrimpassword" required>
+                            </div>
+
+
+                        </div>
+
+                        <div class="form_btn_box">
+                            <!-- Start form btn box  -->
+
+                            <button class="form_btn" id="submit">Register</button>
+                            <!-- end form btn  -->
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- end main -->
+
+        </div>
+
+
+        {{!-- Footer  --}}
+        {{!-- {{>footer}} --}}
+        {{>footer}}
+
+        <script src="JS/navscript.js"></script>
+        <script src="JS/script.js"></script>
+
+    </body>
+
+</html>

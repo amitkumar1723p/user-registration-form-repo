@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{!-- headtag --}}
+        {{>headtag}}
+        <title>login page</title>
+    </head>
+
+    <body class="logiin_body">
+        {{!-- Navigation  --}}
+        {{>navbar}}
+
+
+        {{!-- <div class="loginform"> --}}
+        <div class="mainloginContainer flex flex-colounm aling-center">
+
+            <h2 class="text-center boldfont login-heading">Employee Login form</h2>
+            <div class="login_form flex flex-colounm aling-center">
+                <img src="/Image/login logo.png" alt="">
+
+                <form action="/login" method="post">
+                    <div class="flex flex-colounm">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="flex flex-colounm">
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <button>Sign in</button>
+                </form>
+
+            </div>
+        </div>
+
+        {{!-- Footer  --}}
+        {{>footer}}
+        {{!-- <script src="JS/script.js"></script> --}}
+        {{!-- <script src="JS/script.js"></script> --}}
+        <script src="JS/navscript.js"></script>
+    </body>
+
+</html>
